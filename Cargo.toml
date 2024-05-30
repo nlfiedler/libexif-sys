@@ -1,0 +1,19 @@
+[package]
+name = "libexif-sys"
+version = "1.0.0"
+edition = "2021"
+authors = ["Nathan Fiedler <nathanfiedler@fastmail.fm>"]
+description = "Rust bindings for the libexif C EXIF library."
+homepage = "https://github.com/nlfiedler/libexif-sys"
+repository = "https://github.com/nlfiedler/libexif-sys"
+readme = "README.md"
+license = "MIT"
+keywords = ["libexif", "exif"]
+build = "build.rs"
+
+[dependencies]
+libc = "0.2"
+
+[build-dependencies]
+bindgen = "0.69.4"
+pkg-config = "0.3.30"
