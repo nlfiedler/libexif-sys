@@ -8,7 +8,9 @@ use std::env;
 use std::path::PathBuf;
 use std::process::Command;
 
-const MIN_VERSION: &str = "0.6.24";
+// Using 0.6.22 for now since RockyLinux 9 is not yet caught up (despite it
+// being several years since the 0.6.24 release; that's Rocky for you).
+const MIN_VERSION: &str = "0.6.22";
 const MAX_VERSION: &str = "0.7";
 
 fn main() {
